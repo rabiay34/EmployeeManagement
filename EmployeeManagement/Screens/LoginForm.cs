@@ -92,6 +92,11 @@ namespace EmployeeManagement.Screens
             }
             return true;
         }
+
+        private void UserNameTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

@@ -60,10 +60,10 @@ namespace EmployeeManagement.Screens.Departments
             }
         }
 
-        private void SaveOrUpdateRecord(string storedProcName)
+        private void SaveOrUpdateRecord(string storedProceName)
         {
             DbSQLServer db = new DbSQLServer(AppSetting.ConnectionString());
-            db.SaveOrUpdateRecord(storedProcName, GetObject());
+            db.SaveOrUpdateRecord(storedProceName, GetObject());
         }
 
         private Branch GetObject()
@@ -80,12 +80,6 @@ namespace EmployeeManagement.Screens.Departments
             branch.CreatedBy = LoggedInUser.UserName;
 
             return branch;
-        }
-
-        private void SaveRecord()
-        {
-            DbSQLServer db = new DbSQLServer(AppSetting.ConnectionString());
-            db.SaveOrUpdateRecord("usp_BranchesAddNewBranch", GetObject());
         }
 
         private bool IsFormValidated()

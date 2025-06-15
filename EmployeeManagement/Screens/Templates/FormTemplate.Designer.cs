@@ -32,10 +32,18 @@
             // 
             // FormTemplate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F); // Modern fonta göre ölçeklendirme
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+
+            // 1. Ana Arka Plan Rengi: Modern ve "soft" açık gri
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
+
             this.ClientSize = new System.Drawing.Size(800, 450);
+
+            // 2. Varsayılan Font: Tüm uygulama ile tutarlı olması için Segoe UI
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+
+            // Temel Form Özellikleri korunuyor
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

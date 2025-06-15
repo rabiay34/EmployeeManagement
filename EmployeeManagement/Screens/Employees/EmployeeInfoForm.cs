@@ -6,6 +6,7 @@ using EmployeeManagement.Screens.Templates;
 using EmployeeManagement.Utilities;
 using EmployeeManagement.Utilities.Lists;
 using System;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -25,12 +26,46 @@ namespace EmployeeManagement.Screens.Employees
             if (this.IsUpdate)
             {
                 //update code here write
+                LoadDataAndBindIntoControls();
             }
             else
             {
                 GenerateEmployeeId();
 
             }
+        }
+
+        private void LoadDataAndBindIntoControls()
+        {
+            DbSQLServer db = new DbSQLServer(AppSetting.ConnectionString());
+            DataTable dtEmployee = db.GetDataList(
+                "usp_EmployeeGetEmployeeDetailsById",
+                new DbParameter { Parameter = "@EmployeeId", Value = this.EmployeeId.ToString() }
+            );
+
+                DataRow row = dtEmployee.Rows[0];
+                EmployeeIDTextBox.Text = row["EmployeeId"].ToString();
+                FullNameTextBox.Text = row["FullName"].ToString();
+                DateLeftDateTimePicker.Value = Convert.ToDateTime(row["DateOfBirth"]);
+                TcNoTextBox.Text = row["NICNumber"].ToString();
+                EmailTextBox.Text = row["EmailAddress"].ToString();
+                MobileTextBox.Text = row["Mobile"].ToString();
+                TelephoneTextBox.Text = row["Telephone"].ToString();
+                GenderComboBox.SelectedValue = row["GenderId"];
+                EmploymentDateDateTimePicker.Value = Convert.ToDateTime(row["EmploymentDate"]);
+                BranchNameComboBox.SelectedValue = row["BranchId"];
+                PhotopictureBox.Image = (row["Photo"] is DBNull) ? null : ImageManipualtions.PutPhoto((byte[])row["Photo"]);
+                AdressLineTextBox.Text = row["AddressLine"].ToString();
+                CityComboBox.SelectedValue = row["CityId"];
+                DistrictComboBox.SelectedValue = row["DistrictId"];
+                PostCodeTextBox.Text = row["PostCode"].ToString();
+                JobTitleComboBox.SelectedValue = row["JobTitleId"];
+                CurrentSalaryTextBox.Text = row["CurrentSalary"].ToString();
+                StartingSalaryTextBox.Text = row["StartingSalary"].ToString();
+                HasLeftComboBox.Text = (Convert.ToBoolean(row["HasLeft"]) == true) ? "Yes" : "No";
+                DateLeftDateTimePicker.Value = Convert.ToDateTime(row["DateLeft"]);
+                EmployeeLeavingReasonComboBox.SelectedValue = row["ReasonLeftId"];
+
         }
 
         private void LoadDataIntoComboBoxes()
@@ -59,7 +94,6 @@ namespace EmployeeManagement.Screens.Employees
         private void PhotopictureBox_DoubleClick(object sender, EventArgs e)
         {
             GetPhoto();
-
         }
 
         private void GetPhoto()
@@ -134,7 +168,7 @@ namespace EmployeeManagement.Screens.Employees
             employee.EmploymentDate = EmploymentDateDateTimePicker.Value.Date;
 
             employee.GenderId = (GenderComboBox.SelectedIndex == -1) ? 0: Convert.ToInt32(GenderComboBox.SelectedValue);
-            employee.BranchId = (BranchNameComboBox.SelectedIndex == -1) ? 0:Convert.ToInt32(GenderComboBox.SelectedValue);
+            employee.BranchId = (BranchNameComboBox.SelectedIndex == -1) ? 0:Convert.ToInt32(BranchNameComboBox.SelectedValue);
             employee.Photo = (PhotopictureBox.Image == null) ? null : ImageManipualtions.GetPhoto(PhotopictureBox);
             employee.CityId = (CityComboBox.SelectedIndex == -1) ? 0: Convert.ToInt32(CityComboBox.SelectedValue);
             employee.DistrictId = (DistrictComboBox.SelectedIndex == -1) ? 0 :Convert.ToInt32(DistrictComboBox.SelectedValue);
@@ -197,7 +231,7 @@ namespace EmployeeManagement.Screens.Employees
 
             if (CityComboBox.SelectedIndex == -1)
             {
-                DBMessageBox.ShowErrorMessage("Cinsiyet zorunlu!");
+                DBMessageBox.ShowErrorMessage("Şehir zorunlu!");
                 // GenderComboBox.Focus();
                 return false;
 
@@ -211,7 +245,7 @@ namespace EmployeeManagement.Screens.Employees
             }
             if (PostCodeTextBox.Text.Trim() == string.Empty)
             {
-                DBMessageBox.ShowErrorMessage("Hesap Numarası zorunlu!");
+                DBMessageBox.ShowErrorMessage("Posta Kodu zorunlu!");
 
                 PostCodeTextBox.Focus();
                 return false;
@@ -219,7 +253,7 @@ namespace EmployeeManagement.Screens.Employees
             }
             if (JobTitleComboBox.SelectedIndex == -1)
             {
-                DBMessageBox.ShowErrorMessage("Cinsiyet zorunlu!");
+                DBMessageBox.ShowErrorMessage("Departman seçmek zorunlu!");
                 // GenderComboBox.Focus();
                 return false;
 

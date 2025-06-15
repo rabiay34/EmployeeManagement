@@ -55,7 +55,10 @@
             // 
             // TopPanel
             // 
-            this.TopPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TopPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TopPanel.BackColor = System.Drawing.Color.White;
             this.TopPanel.Controls.Add(this.PostCodeTextBox);
             this.TopPanel.Controls.Add(this.DistrictComboBox);
             this.TopPanel.Controls.Add(this.AddressLinetextBox);
@@ -70,197 +73,217 @@
             this.TopPanel.Controls.Add(this.label4);
             this.TopPanel.Controls.Add(this.label3);
             this.TopPanel.Controls.Add(this.label2);
-            this.TopPanel.Controls.Add(this.LabelTopPanel);
-            this.TopPanel.Location = new System.Drawing.Point(61, 54);
+            this.TopPanel.Location = new System.Drawing.Point(40, 130);
             this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(807, 552);
+            this.TopPanel.Padding = new System.Windows.Forms.Padding(20);
+            this.TopPanel.Size = new System.Drawing.Size(849, 460);
             this.TopPanel.TabIndex = 1;
             // 
             // PostCodeTextBox
             // 
-            this.PostCodeTextBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.PostCodeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PostCodeTextBox.Location = new System.Drawing.Point(351, 448);
+            this.PostCodeTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PostCodeTextBox.BackColor = System.Drawing.Color.White;
+            this.PostCodeTextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.PostCodeTextBox.Location = new System.Drawing.Point(266, 338);
             this.PostCodeTextBox.Name = "PostCodeTextBox";
-            this.PostCodeTextBox.Size = new System.Drawing.Size(283, 30);
-            this.PostCodeTextBox.TabIndex = 7;
+            this.PostCodeTextBox.Size = new System.Drawing.Size(450, 30);
+            this.PostCodeTextBox.TabIndex = 6;
             // 
             // DistrictComboBox
             // 
-            this.DistrictComboBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.DistrictComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DistrictComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.DistrictComboBox.BackColor = System.Drawing.Color.White;
+            this.DistrictComboBox.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.DistrictComboBox.FormattingEnabled = true;
-            this.DistrictComboBox.Location = new System.Drawing.Point(351, 391);
+            this.DistrictComboBox.Location = new System.Drawing.Point(266, 293);
             this.DistrictComboBox.Name = "DistrictComboBox";
-            this.DistrictComboBox.Size = new System.Drawing.Size(283, 33);
-            this.DistrictComboBox.TabIndex = 6;
+            this.DistrictComboBox.Size = new System.Drawing.Size(450, 31);
+            this.DistrictComboBox.TabIndex = 5;
             // 
             // AddressLinetextBox
             // 
-            this.AddressLinetextBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.AddressLinetextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AddressLinetextBox.Location = new System.Drawing.Point(351, 281);
+            this.AddressLinetextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AddressLinetextBox.BackColor = System.Drawing.Color.White;
+            this.AddressLinetextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.AddressLinetextBox.Location = new System.Drawing.Point(266, 203);
             this.AddressLinetextBox.Name = "AddressLinetextBox";
-            this.AddressLinetextBox.Size = new System.Drawing.Size(283, 30);
-            this.AddressLinetextBox.TabIndex = 4;
+            this.AddressLinetextBox.Size = new System.Drawing.Size(450, 30);
+            this.AddressLinetextBox.TabIndex = 3;
             // 
             // CityNameComboBox
             // 
-            this.CityNameComboBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CityNameComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CityNameComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CityNameComboBox.BackColor = System.Drawing.Color.White;
+            this.CityNameComboBox.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.CityNameComboBox.FormattingEnabled = true;
-            this.CityNameComboBox.Location = new System.Drawing.Point(351, 335);
+            this.CityNameComboBox.Location = new System.Drawing.Point(266, 248);
             this.CityNameComboBox.Name = "CityNameComboBox";
-            this.CityNameComboBox.Size = new System.Drawing.Size(283, 33);
-            this.CityNameComboBox.TabIndex = 5;
+            this.CityNameComboBox.Size = new System.Drawing.Size(450, 31);
+            this.CityNameComboBox.TabIndex = 4;
             // 
             // EmailAddressTextBox
             // 
-            this.EmailAddressTextBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.EmailAddressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.EmailAddressTextBox.Location = new System.Drawing.Point(351, 179);
+            this.EmailAddressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.EmailAddressTextBox.BackColor = System.Drawing.Color.White;
+            this.EmailAddressTextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.EmailAddressTextBox.Location = new System.Drawing.Point(266, 113);
             this.EmailAddressTextBox.Name = "EmailAddressTextBox";
-            this.EmailAddressTextBox.Size = new System.Drawing.Size(283, 30);
+            this.EmailAddressTextBox.Size = new System.Drawing.Size(450, 30);
             this.EmailAddressTextBox.TabIndex = 1;
             // 
             // TelephoneTextBox
             // 
-            this.TelephoneTextBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.TelephoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TelephoneTextBox.Location = new System.Drawing.Point(351, 229);
+            this.TelephoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TelephoneTextBox.BackColor = System.Drawing.Color.White;
+            this.TelephoneTextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.TelephoneTextBox.Location = new System.Drawing.Point(266, 158);
             this.TelephoneTextBox.Name = "TelephoneTextBox";
-            this.TelephoneTextBox.Size = new System.Drawing.Size(283, 30);
+            this.TelephoneTextBox.Size = new System.Drawing.Size(450, 30);
             this.TelephoneTextBox.TabIndex = 2;
             // 
             // BranchNameTextBox
             // 
-            this.BranchNameTextBox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BranchNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BranchNameTextBox.Location = new System.Drawing.Point(351, 125);
+            this.BranchNameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BranchNameTextBox.BackColor = System.Drawing.Color.White;
+            this.BranchNameTextBox.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.BranchNameTextBox.Location = new System.Drawing.Point(266, 68);
             this.BranchNameTextBox.Name = "BranchNameTextBox";
-            this.BranchNameTextBox.Size = new System.Drawing.Size(283, 30);
+            this.BranchNameTextBox.Size = new System.Drawing.Size(450, 30);
             this.BranchNameTextBox.TabIndex = 0;
-            this.BranchNameTextBox.TextChanged += new System.EventHandler(this.BranchTextBox_TextChanged);
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(198, 453);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(66, 338);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 25);
+            this.label8.Size = new System.Drawing.Size(190, 30);
             this.label8.TabIndex = 7;
             this.label8.Text = "Posta Kodu :";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(198, 399);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(66, 293);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 25);
+            this.label7.Size = new System.Drawing.Size(190, 30);
             this.label7.TabIndex = 6;
             this.label7.Text = "İlçe :";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(198, 343);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(66, 248);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 25);
+            this.label6.Size = new System.Drawing.Size(190, 30);
             this.label6.TabIndex = 5;
             this.label6.Text = "Şehir :";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(198, 184);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(66, 113);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 25);
+            this.label5.Size = new System.Drawing.Size(190, 30);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Email Adres :";
+            this.label5.Text = "Email Adresi :";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(198, 234);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(66, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 25);
+            this.label4.Size = new System.Drawing.Size(190, 30);
             this.label4.TabIndex = 3;
             this.label4.Text = "Telefon No : ";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(198, 286);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(66, 203);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 25);
+            this.label3.Size = new System.Drawing.Size(190, 30);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Ana Adres :";
+            this.label3.Text = "Adres Satırı :";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(198, 130);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(66, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
+            this.label2.Size = new System.Drawing.Size(190, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "Şube Adı :";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // LabelTopPanel
             // 
-            this.LabelTopPanel.BackColor = System.Drawing.SystemColors.Desktop;
+            this.LabelTopPanel.BackColor = System.Drawing.Color.White;
             this.LabelTopPanel.Controls.Add(this.TopPanelLabel);
             this.LabelTopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LabelTopPanel.Location = new System.Drawing.Point(0, 0);
+            this.LabelTopPanel.Location = new System.Drawing.Point(0, 37);
             this.LabelTopPanel.Name = "LabelTopPanel";
-            this.LabelTopPanel.Size = new System.Drawing.Size(807, 63);
+            this.LabelTopPanel.Size = new System.Drawing.Size(929, 75);
             this.LabelTopPanel.TabIndex = 0;
-            this.LabelTopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.LabelTopPanel_Paint);
             // 
             // TopPanelLabel
             // 
-            this.TopPanelLabel.AutoSize = true;
-            this.TopPanelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TopPanelLabel.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.TopPanelLabel.Location = new System.Drawing.Point(264, 13);
+            this.TopPanelLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TopPanelLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.TopPanelLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
+            this.TopPanelLabel.Location = new System.Drawing.Point(0, 0);
             this.TopPanelLabel.Name = "TopPanelLabel";
-            this.TopPanelLabel.Size = new System.Drawing.Size(283, 38);
+            this.TopPanelLabel.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.TopPanelLabel.Size = new System.Drawing.Size(929, 75);
             this.TopPanelLabel.TabIndex = 1;
-            this.TopPanelLabel.Text = "NextWave Yazılım";
-            this.TopPanelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TopPanelLabel.Text = "Şube Bilgi Formu";
+            this.TopPanelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SaveRecordToolStripMenuItem,
             this.CloseToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(929, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(18, 5, 0, 5);
+            this.menuStrip1.Size = new System.Drawing.Size(929, 37);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // SaveRecordToolStripMenuItem
             // 
             this.SaveRecordToolStripMenuItem.Name = "SaveRecordToolStripMenuItem";
-            this.SaveRecordToolStripMenuItem.Size = new System.Drawing.Size(128, 29);
+            this.SaveRecordToolStripMenuItem.Size = new System.Drawing.Size(122, 27);
             this.SaveRecordToolStripMenuItem.Text = "Kaydı Kaydet";
             this.SaveRecordToolStripMenuItem.Click += new System.EventHandler(this.SaveRecordToolStripMenuItem_Click);
             // 
             // CloseToolStripMenuItem
             // 
             this.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem";
-            this.CloseToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.CloseToolStripMenuItem.Size = new System.Drawing.Size(68, 27);
             this.CloseToolStripMenuItem.Text = "Kapat";
             this.CloseToolStripMenuItem.Click += new System.EventHandler(this.CloseToolStripMenuItem_Click);
             // 
@@ -268,8 +291,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(250)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(929, 631);
             this.Controls.Add(this.TopPanel);
+            this.Controls.Add(this.LabelTopPanel);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "BranchInfoForm";
@@ -278,7 +303,6 @@
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
             this.LabelTopPanel.ResumeLayout(false);
-            this.LabelTopPanel.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
