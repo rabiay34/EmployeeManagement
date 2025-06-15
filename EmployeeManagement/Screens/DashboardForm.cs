@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,15 @@ namespace EmployeeManagement.Screens
         public DashboardForm()
         {
             InitializeComponent();
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // Saati "HH:mm:ss" formatında göster
+            labelTime.Text = DateTime.Now.ToString("HH:mm:ss");
+
+            // Tarihi uzun formatta (örn: "23 Ekim 2023 Pazartesi") göster
+            // CultureInfo ile Türkçe karakterlerin doğru gösterilmesini sağlıyoruz
+            labelDate.Text = DateTime.Now.ToString("dd MMMM yyyy, dddd", new CultureInfo("tr-TR"));
         }
 
         private void hakkındaToolStripMenuItem_Click(object sender, EventArgs e)

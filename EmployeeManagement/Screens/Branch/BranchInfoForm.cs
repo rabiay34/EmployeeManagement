@@ -44,7 +44,7 @@ namespace EmployeeManagement.Screens.Departments
                 {
                     SaveOrUpdateRecord("usp_BranchesUpdateBranchDetails");
 
-                    DBMessageBox.ShowSuccessMessage("Kayıt Başarıyla Güncellendi!y");
+                    DBMessageBox.ShowSuccessMessage("Kayıt Başarıyla Güncellendi!");
 
 
                 }

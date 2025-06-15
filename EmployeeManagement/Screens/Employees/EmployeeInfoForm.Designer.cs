@@ -180,13 +180,13 @@
             // 
             // EmploymentDateDateTimePicker
             // 
-            this.EmploymentDateDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.EmploymentDateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.EmploymentDateDateTimePicker.Location = new System.Drawing.Point(825, 18);
-            this.EmploymentDateDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.EmploymentDateDateTimePicker.Name = "EmploymentDateDateTimePicker";
-            this.EmploymentDateDateTimePicker.Size = new System.Drawing.Size(250, 30);
-            this.EmploymentDateDateTimePicker.TabIndex = 21;
+            this.DateLeftDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            this.DateLeftDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DateLeftDateTimePicker.Location = new System.Drawing.Point(190, 88);
+            this.DateLeftDateTimePicker.Name = "DateLeftDateTimePicker";
+            this.DateLeftDateTimePicker.ShowCheckBox = true; // Bu ayar kalmalı
+            this.DateLeftDateTimePicker.Size = new System.Drawing.Size(250, 30);
+            this.DateLeftDateTimePicker.TabIndex = 24;
             // 
             // DateOfBirthDateTimePicker
             // 

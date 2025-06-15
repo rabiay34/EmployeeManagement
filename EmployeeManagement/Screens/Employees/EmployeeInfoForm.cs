@@ -213,6 +213,12 @@ namespace EmployeeManagement.Screens.Employees
                 return false;
 
             }
+            if (!string.IsNullOrWhiteSpace(MobileTextBox.Text.Trim()) && !MobileTextBox.Text.Trim().StartsWith("05"))
+            {
+                DBMessageBox.ShowErrorMessage("Cep telefonu '05' ile başlamalıdır!");
+                MobileTextBox.Focus();
+                return false;
+            }
 
             if (GenderComboBox.SelectedIndex == -1)
             {
@@ -222,11 +228,20 @@ namespace EmployeeManagement.Screens.Employees
                 return false;
 
             }
-            if (EmailTextBox.Text.Trim() == string.Empty)
+            string email = EmailTextBox.Text.Trim();
+
+            if (email == string.Empty)
             {
                 DBMessageBox.ShowErrorMessage("Email zorunlu!");
+                EmailTextBox.Focus();
                 return false;
+            }
 
+            if (!email.Contains("@"))
+            {
+                DBMessageBox.ShowErrorMessage("Geçerli bir email adresi giriniz! '@' işareti eksik.");
+                EmailTextBox.Focus();
+                return false;
             }
 
             if (CityComboBox.SelectedIndex == -1)
@@ -251,6 +266,15 @@ namespace EmployeeManagement.Screens.Employees
                 return false;
 
             }
+            string postCode = PostCodeTextBox.Text.Trim();
+
+            if (postCode.Length != 5)
+            {
+                DBMessageBox.ShowErrorMessage("Posta Kodu 5 karakterli olmalıdır!");
+                PostCodeTextBox.Focus();
+                return false;
+            }
+
             if (JobTitleComboBox.SelectedIndex == -1)
             {
                 DBMessageBox.ShowErrorMessage("Departman seçmek zorunlu!");
