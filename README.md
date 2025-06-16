@@ -1,4 +1,5 @@
 Çalışan Yönetim Sistemi
+---------------------------------------------
 
  Proje Özellikleri:
  
@@ -14,7 +15,7 @@
 
 👥 Rol bazlı kullanıcı yönetimi (Admin, Kullanıcı vb.)
 
-
+---------------------------------------------------------------------
 
 | Teknoloji           | Açıklama                                  |
 | ------------------- | ----------------------------------------- |
@@ -24,7 +25,7 @@
 | Stored Procedures   | Veri işlemlerini yönetmek                 |
 | Entity-Relationship | Mantıksal veritabanı modeli               |
 
-
+-----------------------------------------------------------
 
 
 🗂️ Veritabanı Tasarımı
