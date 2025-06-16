@@ -52,7 +52,7 @@ namespace EmployeeManagement.Screens.Employees
                 MobileTextBox.Text = row["Mobile"].ToString();
                 TelephoneTextBox.Text = row["Telephone"].ToString();
                 GenderComboBox.SelectedValue = row["GenderId"];
-                EmploymentDateDateTimePicker.Value = Convert.ToDateTime(row["EmploymentDate"]);
+                DateLeftDateTimePicker.Value = Convert.ToDateTime(row["EmploymentDate"]);
                 BranchNameComboBox.SelectedValue = row["BranchId"];
                 PhotopictureBox.Image = (row["Photo"] is DBNull) ? null : ImageManipualtions.PutPhoto((byte[])row["Photo"]);
                 AdressLineTextBox.Text = row["AddressLine"].ToString();
@@ -62,7 +62,7 @@ namespace EmployeeManagement.Screens.Employees
                 JobTitleComboBox.SelectedValue = row["JobTitleId"];
                 CurrentSalaryTextBox.Text = row["CurrentSalary"].ToString();
                 StartingSalaryTextBox.Text = row["StartingSalary"].ToString();
-                HasLeftComboBox.Text = (Convert.ToBoolean(row["HasLeft"]) == true) ? "Yes" : "No";
+                HasLeftComboBox.Text = (Convert.ToBoolean(row["HasLeft"]) == true) ? "Evet" : "Hayır";
                 DateLeftDateTimePicker.Value = Convert.ToDateTime(row["DateLeft"]);
                 EmployeeLeavingReasonComboBox.SelectedValue = row["ReasonLeftId"];
 
@@ -165,7 +165,7 @@ namespace EmployeeManagement.Screens.Employees
             employee.EmailAddress = EmailTextBox.Text.Trim();
             employee.Mobile = MobileTextBox.Text.Trim();
             employee.Telephone = TelephoneTextBox.Text.Trim();
-            employee.EmploymentDate = EmploymentDateDateTimePicker.Value.Date;
+            employee.EmploymentDate = DateLeftDateTimePicker.Value.Date;
 
             employee.GenderId = (GenderComboBox.SelectedIndex == -1) ? 0: Convert.ToInt32(GenderComboBox.SelectedValue);
             employee.BranchId = (BranchNameComboBox.SelectedIndex == -1) ? 0:Convert.ToInt32(BranchNameComboBox.SelectedValue);
@@ -177,7 +177,7 @@ namespace EmployeeManagement.Screens.Employees
             employee.JobTitleId = (JobTitleComboBox.SelectedIndex == -1) ? 0: Convert.ToInt32(JobTitleComboBox.SelectedValue);
             employee.CurrentSalary = Convert.ToDecimal(CurrentSalaryTextBox.Text.Trim());
             employee.StartingSalary = Convert.ToDecimal(StartingSalaryTextBox.Text.Trim());
-            employee.HasLeft = (HasLeftComboBox.Text == "Yes") ? true :false;
+            employee.HasLeft = (HasLeftComboBox.Text == "Evet") ? true :false;
             employee.DateLeft = DateLeftDateTimePicker.Value.Date;
             employee.ReasonLeftId = (EmployeeLeavingReasonComboBox.SelectedIndex == -1) ? 0 : Convert.ToInt32(EmployeeLeavingReasonComboBox.SelectedValue);
             employee.Comments = EmployeeLeavingCommentsTextBox.Text.Trim();

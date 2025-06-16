@@ -34,7 +34,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.FullNameTextBox = new System.Windows.Forms.TextBox();
             this.BranchNameComboBox = new System.Windows.Forms.ComboBox();
-            this.EmploymentDateDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.ClearPictureBox = new System.Windows.Forms.PictureBox();
+            this.GetPhotoPictureBox = new System.Windows.Forms.PictureBox();
             this.DateOfBirthDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.GenderComboBox = new System.Windows.Forms.ComboBox();
             this.MobileTextBox = new System.Windows.Forms.TextBox();
@@ -52,6 +53,7 @@
             this.DateOfBirth = new System.Windows.Forms.Label();
             this.Email = new System.Windows.Forms.Label();
             this.Employee = new System.Windows.Forms.Label();
+            this.PhotopictureBox = new System.Windows.Forms.PictureBox();
             this.topPage = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.EmploymentsDetailsGroupBox = new System.Windows.Forms.GroupBox();
@@ -79,19 +81,16 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.ClearPictureBox = new System.Windows.Forms.PictureBox();
-            this.GetPhotoPictureBox = new System.Windows.Forms.PictureBox();
-            this.PhotopictureBox = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ClearPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPhotoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhotopictureBox)).BeginInit();
             this.topPage.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.EmploymentsDetailsGroupBox.SuspendLayout();
             this.AddressGroupBox.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ClearPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GetPhotoPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PhotopictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -132,7 +131,6 @@
             this.panel1.Controls.Add(this.BranchNameComboBox);
             this.panel1.Controls.Add(this.ClearPictureBox);
             this.panel1.Controls.Add(this.GetPhotoPictureBox);
-            this.panel1.Controls.Add(this.EmploymentDateDateTimePicker);
             this.panel1.Controls.Add(this.DateOfBirthDateTimePicker);
             this.panel1.Controls.Add(this.GenderComboBox);
             this.panel1.Controls.Add(this.MobileTextBox);
@@ -178,15 +176,33 @@
             this.BranchNameComboBox.Size = new System.Drawing.Size(250, 31);
             this.BranchNameComboBox.TabIndex = 24;
             // 
-            // EmploymentDateDateTimePicker
+            // ClearPictureBox
             // 
-            this.DateLeftDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.DateLeftDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateLeftDateTimePicker.Location = new System.Drawing.Point(190, 88);
-            this.DateLeftDateTimePicker.Name = "DateLeftDateTimePicker";
-            this.DateLeftDateTimePicker.ShowCheckBox = true; // Bu ayar kalmalı
-            this.DateLeftDateTimePicker.Size = new System.Drawing.Size(250, 30);
-            this.DateLeftDateTimePicker.TabIndex = 24;
+            this.ClearPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.ClearPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ClearPictureBox.Image = global::EmployeeManagement.Properties.Resources.image__1_;
+            this.ClearPictureBox.Location = new System.Drawing.Point(112, 231);
+            this.ClearPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ClearPictureBox.Name = "ClearPictureBox";
+            this.ClearPictureBox.Size = new System.Drawing.Size(46, 50);
+            this.ClearPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ClearPictureBox.TabIndex = 23;
+            this.ClearPictureBox.TabStop = false;
+            this.ClearPictureBox.Click += new System.EventHandler(this.ClearPictureBox_Click);
+            // 
+            // GetPhotoPictureBox
+            // 
+            this.GetPhotoPictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.GetPhotoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GetPhotoPictureBox.Image = global::EmployeeManagement.Properties.Resources.image;
+            this.GetPhotoPictureBox.Location = new System.Drawing.Point(52, 231);
+            this.GetPhotoPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.GetPhotoPictureBox.Name = "GetPhotoPictureBox";
+            this.GetPhotoPictureBox.Size = new System.Drawing.Size(46, 50);
+            this.GetPhotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GetPhotoPictureBox.TabIndex = 22;
+            this.GetPhotoPictureBox.TabStop = false;
+            this.GetPhotoPictureBox.Click += new System.EventHandler(this.GetPhotoPictureBox_Click);
             // 
             // DateOfBirthDateTimePicker
             // 
@@ -363,6 +379,18 @@
             this.Employee.TabIndex = 2;
             this.Employee.Text = "Çalışan No :";
             this.Employee.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // PhotopictureBox
+            // 
+            this.PhotopictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
+            this.PhotopictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PhotopictureBox.Location = new System.Drawing.Point(25, 25);
+            this.PhotopictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PhotopictureBox.Name = "PhotopictureBox";
+            this.PhotopictureBox.Size = new System.Drawing.Size(160, 200);
+            this.PhotopictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PhotopictureBox.TabIndex = 1;
+            this.PhotopictureBox.TabStop = false;
             // 
             // topPage
             // 
@@ -639,11 +667,13 @@
             // 
             // DateLeftDateTimePicker
             // 
+            this.DateLeftDateTimePicker.Checked = false;
             this.DateLeftDateTimePicker.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.DateLeftDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DateLeftDateTimePicker.Location = new System.Drawing.Point(190, 88);
             this.DateLeftDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DateLeftDateTimePicker.Name = "DateLeftDateTimePicker";
+            this.DateLeftDateTimePicker.ShowCheckBox = true;
             this.DateLeftDateTimePicker.Size = new System.Drawing.Size(250, 30);
             this.DateLeftDateTimePicker.TabIndex = 24;
             // 
@@ -700,46 +730,6 @@
             this.label9.Text = "Çalışma Durumu :";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ClearPictureBox
-            // 
-            this.ClearPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.ClearPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ClearPictureBox.Image = global::EmployeeManagement.Properties.Resources.image__1_;
-            this.ClearPictureBox.Location = new System.Drawing.Point(112, 231);
-            this.ClearPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ClearPictureBox.Name = "ClearPictureBox";
-            this.ClearPictureBox.Size = new System.Drawing.Size(46, 50);
-            this.ClearPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ClearPictureBox.TabIndex = 23;
-            this.ClearPictureBox.TabStop = false;
-            this.ClearPictureBox.Click += new System.EventHandler(this.ClearPictureBox_Click);
-            // 
-            // GetPhotoPictureBox
-            // 
-            this.GetPhotoPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.GetPhotoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GetPhotoPictureBox.Image = global::EmployeeManagement.Properties.Resources.image;
-            this.GetPhotoPictureBox.Location = new System.Drawing.Point(52, 231);
-            this.GetPhotoPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.GetPhotoPictureBox.Name = "GetPhotoPictureBox";
-            this.GetPhotoPictureBox.Size = new System.Drawing.Size(46, 50);
-            this.GetPhotoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.GetPhotoPictureBox.TabIndex = 22;
-            this.GetPhotoPictureBox.TabStop = false;
-            this.GetPhotoPictureBox.Click += new System.EventHandler(this.GetPhotoPictureBox_Click);
-            // 
-            // PhotopictureBox
-            // 
-            this.PhotopictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
-            this.PhotopictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhotopictureBox.Location = new System.Drawing.Point(25, 25);
-            this.PhotopictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PhotopictureBox.Name = "PhotopictureBox";
-            this.PhotopictureBox.Size = new System.Drawing.Size(160, 200);
-            this.PhotopictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PhotopictureBox.TabIndex = 1;
-            this.PhotopictureBox.TabStop = false;
-            // 
             // EmployeeInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -758,6 +748,9 @@
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ClearPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GetPhotoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhotopictureBox)).EndInit();
             this.topPage.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.EmploymentsDetailsGroupBox.ResumeLayout(false);
@@ -766,9 +759,6 @@
             this.AddressGroupBox.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ClearPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GetPhotoPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PhotopictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -797,7 +787,6 @@
         private System.Windows.Forms.Label Gender;
         private System.Windows.Forms.ComboBox GenderComboBox;
         private System.Windows.Forms.TextBox MobileTextBox;
-        private System.Windows.Forms.DateTimePicker EmploymentDateDateTimePicker;
         private System.Windows.Forms.DateTimePicker DateOfBirthDateTimePicker;
         private System.Windows.Forms.TabControl topPage;
         private System.Windows.Forms.TabPage tabPage1;
