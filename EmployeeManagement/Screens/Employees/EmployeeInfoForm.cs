@@ -91,10 +91,7 @@ namespace EmployeeManagement.Screens.Employees
             this.Close();
         }
 
-        private void PhotopictureBox_DoubleClick(object sender, EventArgs e)
-        {
-            GetPhoto();
-        }
+      
 
         private void GetPhoto()
         {
@@ -320,6 +317,9 @@ namespace EmployeeManagement.Screens.Employees
             return true;
         }
 
-       
+        private void PhotopictureBox_DoubleClick_1(object sender, EventArgs e)
+        {
+            GetPhoto();
+        }
     }
 }

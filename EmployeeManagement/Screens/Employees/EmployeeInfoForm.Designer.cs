@@ -181,7 +181,7 @@
             this.ClearPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.ClearPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ClearPictureBox.Image = global::EmployeeManagement.Properties.Resources.image__1_;
-            this.ClearPictureBox.Location = new System.Drawing.Point(112, 231);
+            this.ClearPictureBox.Location = new System.Drawing.Point(121, 232);
             this.ClearPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ClearPictureBox.Name = "ClearPictureBox";
             this.ClearPictureBox.Size = new System.Drawing.Size(46, 50);
@@ -195,7 +195,7 @@
             this.GetPhotoPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.GetPhotoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.GetPhotoPictureBox.Image = global::EmployeeManagement.Properties.Resources.image;
-            this.GetPhotoPictureBox.Location = new System.Drawing.Point(52, 231);
+            this.GetPhotoPictureBox.Location = new System.Drawing.Point(59, 232);
             this.GetPhotoPictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GetPhotoPictureBox.Name = "GetPhotoPictureBox";
             this.GetPhotoPictureBox.Size = new System.Drawing.Size(46, 50);
@@ -384,13 +384,15 @@
             // 
             this.PhotopictureBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(245)))), ((int)(((byte)(249)))));
             this.PhotopictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhotopictureBox.Location = new System.Drawing.Point(25, 25);
+            this.PhotopictureBox.Image = global::EmployeeManagement.Properties.Resources.istockphoto_1300845620_612x612;
+            this.PhotopictureBox.Location = new System.Drawing.Point(36, 25);
             this.PhotopictureBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PhotopictureBox.Name = "PhotopictureBox";
-            this.PhotopictureBox.Size = new System.Drawing.Size(160, 200);
-            this.PhotopictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PhotopictureBox.Size = new System.Drawing.Size(160, 186);
+            this.PhotopictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PhotopictureBox.TabIndex = 1;
             this.PhotopictureBox.TabStop = false;
+            this.PhotopictureBox.DoubleClick += new System.EventHandler(this.PhotopictureBox_DoubleClick_1);
             // 
             // topPage
             // 
