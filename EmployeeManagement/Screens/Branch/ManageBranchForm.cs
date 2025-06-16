@@ -60,10 +60,7 @@ namespace EmployeeManagement.Screens.Departments
             bif.ShowDialog();
         }
 
-        private void TopPanelLabel_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
     }
 }

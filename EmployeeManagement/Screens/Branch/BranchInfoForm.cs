@@ -19,17 +19,7 @@ namespace EmployeeManagement.Screens.Departments
             InitializeComponent();
         }
 
-        private void LabelTopPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-
+  
         private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
