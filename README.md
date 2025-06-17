@@ -76,5 +76,5 @@ Bu proje, bir şirketin çalışan yönetimini etkin ve güvenli bir şekilde ya
 
 ## 📧 İletişim
 
-Bu proje [\Rabia YAZLI](https://linkedin.com/in/rabiayazlı34) tarafından geliştirilmiştir. Geri bildirimler ve katkılar için iletişime geçebilirsiniz.
+Bu proje [Rabia YAZLI](https://linkedin.com/in/rabiayazlı34) tarafından geliştirilmiştir. Geri bildirimler ve katkılar için iletişime geçebilirsiniz.
 
