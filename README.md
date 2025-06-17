@@ -1,48 +1,76 @@
-Çalışan Yönetim Sistemi
----------------------------------------------
+# 📁 Şirket-Çalışan Yönetim Sistemi (Employee Management System)
 
- Proje Özellikleri:
- 
-👤 Çalışan bilgilerini ekleme, güncelleme ve görüntüleme (Ad, Soyad, Telefon, E-Posta vb.)
+Bu proje, bir şirketin çalışan yönetimini etkin ve güvenli bir şekilde yapabilmesini sağlayan bir Windows masaüstü uygulamasıdır. Proje kapsamında çalışan bilgileri, maaşlar, departmanlar, iş geçmişi gibi veriler yönetilir ve izlenebilir.
 
-🕒 Çalışan bilgilerinin güncellenmeden önceki ve sonraki hallerinin izlenmesi (Audit takibi)
+---
 
-📌 Çalışanın iş geçmişi ve aktif iş pozisyonu
+## 🧹 Proje Özellikleri
 
-💰 Çalışan maaş bilgileri görüntüleme
+* 👤 Çalışan bilgilerini ekleme, güncelleme ve görüntüleme (Ad, Soyad, Telefon, E-Posta vb.)
+* 🕒 Çalışan bilgilerinin **güncellenmeden önceki** ve **sonraki** hallerinin izlenmesi (Audit takibi)
+* 📌 Çalışanın iş geçmişi ve aktif iş pozisyonu
+* 💰 Çalışan maaş bilgileri
+* 🏢 Departman ve şube bilgileri
+* 👥 Rol bazlı kullanıcı yönetimi (Admin, Kullanıcı vb.)
+* 🔐 Veri güvenliği ve düzenli veri erişimi
 
-🏢 Departman ve şube bilgileri
+---
 
-👥 Rol bazlı kullanıcı yönetimi (Admin, Kullanıcı vb.)
+## 🛠️ Kullanılan Teknolojiler
 
----------------------------------------------------------------------
+| Teknoloji           | Açıklama                                  |
+| ------------------- | ----------------------------------------- |
+| C#.NET              | Uygulama geliştirme dili                  |
+| Windows Forms       | Masaüstü kullanıcı arayüzü                |
+| MSSQL (v20.2)       | Veritabanı yönetimi                       |
+| Stored Procedures   | Veri işlemlerini yönetmek için kullanıldı |
+| Entity-Relationship | Mantıksal veritabanı modeli               |
 
-| Teknoloji                      | Açıklama                       |
-| ---------------------------    | ---------------------------    |
-| C#.NET                         | Uygulama geliştirme dili       |
-| Windows Forms (.NET Framework) | Masaüstü kullanıcı arayüzü     |
-| MSSQL (v20.2)                  | Veritabanı yönetimi            |
-| Stored Procedures              | Veri işlemlerini yönetmek      |
-| Entity-Relationship            | Mantıksal veritabanı modeli    |
+---
 
------------------------------------------------------------
+## 📂 Veritabanı Tasarımı
 
+**Temel Tablolar:**
 
-🗂️ Veritabanı Tasarımı (Temel Tablolar)
+* `Employees`: Çalışan bilgileri
+* `Branches`: Şube bilgileri
+* `Departments`: Departman bilgileri
+* `Roles`, `Users`: Kullanıcı giriş ve yetki kontrolü
+* `EmployeesAudit`: Çalışan güncelleme geçmişi
+* `Salaries`: Maaş kayıtları
+* `ListTypes`, `ListTypesData`: Sabit veri yönetimi (şehir, cinsiyet, unvan vb.)
 
+---
 
-Employees: Çalışan bilgileri
+## 🔄 Proje Fonksiyonları
 
-Branches: Şube bilgileri
+* ✅ Yeni çalışan kaydı ekleme
+* ✏️ Mevcut çalışan bilgisini güncelleme
+* 📜 Güncelleme geçmişini listeleme
+* 💼 Şube ve departman ekleme
+* 🔐 Rol bazlı kullanıcı yetkilendirme
 
-Departments: Departman bilgileri
+---
 
-Roles, Users: Kullanıcı giriş ve yetki kontrolü
+## 🧪 Kurulum ve Kullanım
 
-EmployeesAudit: Çalışan güncelleme geçmişi
+1. Projeyi Visual Studio'da açın
+2. SQL Server üzerinde `EmployeeManagement` veritabanını oluşturun
+3. Gerekli `Tables` ve `Stored Procedures` scriptlerini çalıştırın
+4. `App.config` dosyasındaki bağlantı cümlesini güncelleyin
+5. Uygulamayı başlatın
 
-BranchesAudit: Şube güncelleme geçmişi
+---
 
-Salaries: Maaş kayıtları
+## 📝 Notlar
 
-ListTypes, ListTypesData: Sabit veri yönetimi (şehir, cinsiyet, unvan vb.)
+* Veritabanında `ListTypes` ve `ListTypesData` tabloları kullanılarak dinamik sabit veriler tanımlanmıştır.
+* `Audit` tablosu sayesinde, yapılan değii\u015ikliklerin geçmişi görüntülenebilir.
+* `Soft Delete` özelliği tercih edilmediğinde `Hard Delete` prosedürleri kullanılmıştır.
+
+---
+
+## 📧 İletişim
+
+Bu proje \[Rabia YAZLI] tarafından geliştirilmiştir. Geri bildirimler ve katkılar için iletişime geçebilirsiniz.
+
