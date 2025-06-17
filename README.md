@@ -17,13 +17,13 @@
 
 ---------------------------------------------------------------------
 
-| Teknoloji           | Açıklama                                  |
-| ------------------- | ----------------------------------------- |
-| C#.NET              | Uygulama geliştirme dili                  |
-| Windows Forms       | Masaüstü kullanıcı arayüzü                |
-| MSSQL (v20.2)       | Veritabanı yönetimi                       |
-| Stored Procedures   | Veri işlemlerini yönetmek                 |
-| Entity-Relationship | Mantıksal veritabanı modeli               |
+| Teknoloji                      | Açıklama                       |
+| ---------------------------    | ---------------------------    |
+| C#.NET                         | Uygulama geliştirme dili       |
+| Windows Forms (.NET Framework) | Masaüstü kullanıcı arayüzü     |
+| MSSQL (v20.2)                  | Veritabanı yönetimi            |
+| Stored Procedures              | Veri işlemlerini yönetmek      |
+| Entity-Relationship            | Mantıksal veritabanı modeli    |
 
 -----------------------------------------------------------
 
