@@ -1,6 +1,10 @@
-# 📁 Şirket-Çalışan Yönetim Sistemi (Employee Management System)
+# 📁 Şirket-Çalışan Yönetim Sistemi (Employee Management)
 
 Bu proje, bir şirketin çalışan yönetimini etkin ve güvenli bir şekilde yapabilmesini sağlayan bir Windows masaüstü uygulamasıdır. Proje kapsamında çalışan bilgileri, maaşlar, departmanlar, iş geçmişi gibi veriler yönetilir ve izlenebilir.
+
+---
+
+![Ekran görüntüsü 2025-06-16 180602](https://github.com/user-attachments/assets/e51a13a8-c27f-445e-b4c1-b562925e34ba)
 
 ---
 
@@ -72,5 +76,5 @@ Bu proje, bir şirketin çalışan yönetimini etkin ve güvenli bir şekilde ya
 
 ## 📧 İletişim
 
-Bu proje \[Rabia YAZLI] tarafından geliştirilmiştir. Geri bildirimler ve katkılar için iletişime geçebilirsiniz.
+Bu proje [\Rabia YAZLI](https://linkedin.com/in/rabiayazlı34) tarafından geliştirilmiştir. Geri bildirimler ve katkılar için iletişime geçebilirsiniz.
 
