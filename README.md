@@ -28,9 +28,8 @@
 -----------------------------------------------------------
 
 
-🗂️ Veritabanı Tasarımı
+🗂️ Veritabanı Tasarımı (Temel Tablolar)
 
-Temel Tablolar:
 
 Employees: Çalışan bilgileri
 
