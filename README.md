@@ -38,7 +38,7 @@ Bu proje, bir şirketin çalışan yönetimini etkin ve güvenli bir şekilde ya
 
 * `Employees`: Çalışan bilgileri
 * `Branches`: Şube bilgileri
-* `Departments`: Departman bilgileri
+* `BranchesAudit`: Şube güncelleme geçmişi
 * `Roles`, `Users`: Kullanıcı giriş ve yetki kontrolü
 * `EmployeesAudit`: Çalışan güncelleme geçmişi
 * `Salaries`: Maaş kayıtları
