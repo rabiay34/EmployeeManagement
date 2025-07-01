@@ -70,7 +70,7 @@ Bu proje, bir şirketin çalışan yönetimini etkin ve güvenli bir şekilde ya
 
 * Veritabanında `ListTypes` ve `ListTypesData` tabloları kullanılarak dinamik sabit veriler tanımlanmıştır.
 * `Audit` tablosu sayesinde, yapılan değii\u015ikliklerin geçmişi görüntülenebilir.
-* `Soft Delete` özelliği tercih edilmediğinde `Hard Delete` prosedürleri kullanılmıştır.
+* `Soft Delete` özelliği yerine `Hard Delete` prosedürleri kullanılmıştır.
 
 ---
 
